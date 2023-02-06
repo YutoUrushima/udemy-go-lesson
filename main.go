@@ -2,14 +2,19 @@ package main
 
 import "fmt"
 
-func init() {
-	fmt.Println("init")
-}
+type MyInt int
 
-func init() {
-	fmt.Println("init2")
+func (mi MyInt) Print() {
+	fmt.Println(mi)
 }
 
 func main() {
-	fmt.Println("Main")
+	var mi MyInt
+	fmt.Println(mi)
+	fmt.Printf("%T\n", mi)
+
+	// i := 100
+	// fmt.Println(mi + i)
+
+	mi.Print()
 }
