@@ -1,22 +1,10 @@
 package main
 
-import (
-	"fmt"
-	"udemy-go-lesson/alib"
-)
-
-func IsOne(i int) bool {
-	if i == 1 {
-		return true
-	} else {
-		return false
-	}
-}
-
 func main() {
-	fmt.Println(IsOne(1))
-	fmt.Println(IsOne(0))
+	// match, _ := regexp.MatchString("A", "ABC")
+	// fmt.Println(match)
 
-	s := []int{1, 2, 3, 4, 5}
-	fmt.Println(alib.Average(s))
+	// rel, _ := regexp.Compile("A")
+	// match = rel.MatchString("ABC")
+	// fmt.Println(match)
 }
