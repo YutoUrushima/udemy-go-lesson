@@ -1,10 +1,15 @@
 package main
 
-func main() {
-	// match, _ := regexp.MatchString("A", "ABC")
-	// fmt.Println(match)
+import (
+	"fmt"
 
-	// rel, _ := regexp.Compile("A")
-	// match = rel.MatchString("ABC")
-	// fmt.Println(match)
+	"github.com/google/uuid"
+)
+
+func main() {
+	uuidObj, _ := uuid.NewUUID()
+	fmt.Println("  ", uuidObj.String())
+
+	uuidObj2, _ := uuid.NewRandom()
+	fmt.Println("  ", uuidObj2.String())
 }
