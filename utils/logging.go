@@ -12,6 +12,6 @@ func LoggingSettings(logFile string) {
 		log.Fatalln(err)
 	}
 	multiLogFile := io.MultiWriter(os.Stdout, logfile)
-	log.SetFlags(log.Ldate|log.Ltime|log.Lshortfile)
+	log.SetFlags(log.Ldate | log.Ltime | log.Lshortfile)
 	log.SetOutput(multiLogFile)
 }
