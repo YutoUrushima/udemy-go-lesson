@@ -2,14 +2,15 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/google/uuid"
+	"log"
+	"udemy-go-lesson/config"
 )
 
 func main() {
-	uuidObj, _ := uuid.NewUUID()
-	fmt.Println("  ", uuidObj.String())
+	fmt.Println(config.Config.Port)
+	fmt.Println(config.Config.SQLDriver)
+	fmt.Println(config.Config.DbName)
+	fmt.Println(config.Config.LogFile)
 
-	uuidObj2, _ := uuid.NewRandom()
-	fmt.Println("  ", uuidObj2.String())
+	log.Println("test")
 }
