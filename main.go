@@ -2,15 +2,12 @@ package main
 
 import (
 	"fmt"
-	"log"
-	"udemy-go-lesson/config"
+	"udemy-go-lesson/app/controllers"
+	"udemy-go-lesson/app/models"
 )
 
 func main() {
-	fmt.Println(config.Config.Port)
-	fmt.Println(config.Config.SQLDriver)
-	fmt.Println(config.Config.DbName)
-	fmt.Println(config.Config.LogFile)
+	fmt.Println(models.Db)
 
-	log.Println("test")
+	controllers.StartMainServer()
 }
