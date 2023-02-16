@@ -1,2 +1,970 @@
 2023/02/14 15:23:16 main.go:15: test
 2023/02/15 11:21:57 users.go:28: sql: converting argument $1 type: unsupported type func() uuid.UUID, a func
+2023/02/16 16:44:13 server.go:3230: http: panic serving [::1]:54742: template: public_navbar.html:6: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00020e090})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00013c000}, {0x831860, 0x93b500}, {0xc0000c1a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00013c000?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc0000c1af0?, {0x93e228?, 0xc00013c000?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00013c000}, 0xc000114100)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a35f0?}, {0x93e228, 0xc00013c000}, 0xc000114100)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000b74a0, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:13 server.go:3230: http: panic serving [::1]:54744: template: public_navbar.html:6: unexpected EOF
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00020e1f0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc000256000}, {0x831860, 0x93b500}, {0xc00019aa10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc000256000?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00019aaf0?, {0x93e228?, 0xc000256000?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc000256000}, 0xc0001a8000)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000184090?}, {0x93e228, 0xc000256000}, 0xc0001a8000)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000188000, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:13 server.go:3230: http: panic serving [::1]:54746: template: public_navbar.html:6: unexpected EOF
+goroutine 54 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00020e360})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0002560e0}, {0x831860, 0x93b500}, {0xc00019aa10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc0002560e0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00019aaf0?, {0x93e228?, 0xc0002560e0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0002560e0}, 0xc000272000)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002167e0?}, {0x93e228, 0xc0002560e0}, 0xc000272000)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000270000, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:15 server.go:3230: http: panic serving [::1]:54750: template: public_navbar.html:6: unexpected EOF
+goroutine 5 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00020e410})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00029e000}, {0x831860, 0x93b500}, {0xc000065a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00029e000?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc000065af0?, {0x93e228?, 0xc00029e000?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00029e000}, 0xc000294000)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000292090?}, {0x93e228, 0xc00029e000}, 0xc000294000)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000000a0, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:15 server.go:3230: http: panic serving [::1]:54748: template: public_navbar.html:6: unexpected EOF
+goroutine 58 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00020e570})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0002561c0}, {0x831860, 0x93b500}, {0xc00019aa10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc0002561c0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00019aaf0?, {0x93e228?, 0xc0002561c0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0002561c0}, 0xc000272100)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000216e10?}, {0x93e228, 0xc0002561c0}, 0xc000272100)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0002700a0, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:15 server.go:3230: http: panic serving [::1]:54752: template: public_navbar.html:6: unexpected EOF
+goroutine 63 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00020e6e0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0002562a0}, {0x831860, 0x93b500}, {0xc00019aa10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc0002562a0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00019aaf0?, {0x93e228?, 0xc0002562a0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0002562a0}, 0xc000272200)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000217590?}, {0x93e228, 0xc0002562a0}, 0xc000272200)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000270140, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:17 server.go:3230: http: panic serving [::1]:54754: template: public_navbar.html:6: unexpected EOF
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00020e840})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc000256380}, {0x831860, 0x93b500}, {0xc00019ba10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc000256380?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00019baf0?, {0x93e228?, 0xc000256380?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc000256380}, 0xc0001a8100)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001841b0?}, {0x93e228, 0xc000256380}, 0xc0001a8100)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0001880a0, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:17 server.go:3230: http: panic serving [::1]:54756: template: public_navbar.html:6: unexpected EOF
+goroutine 36 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00020e9a0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc000256460}, {0x831860, 0x93b500}, {0xc00019ca10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc000256460?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00019caf0?, {0x93e228?, 0xc000256460?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc000256460}, 0xc0001a8200)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001842a0?}, {0x93e228, 0xc000256460}, 0xc0001a8200)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000188140, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:17 server.go:3230: http: panic serving [::1]:54758: template: public_navbar.html:6: unexpected EOF
+goroutine 73 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00020eb10})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc000256540}, {0x831860, 0x93b500}, {0xc00019ca10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc000256540?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00019caf0?, {0x93e228?, 0xc000256540?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc000256540}, 0xc000272300)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00027c6f0?}, {0x93e228, 0xc000256540}, 0xc000272300)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0002701e0, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:22 server.go:3230: http: panic serving [::1]:54760: template: public_navbar.html:6: unexpected EOF
+goroutine 77 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00020ec80})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc000256620}, {0x831860, 0x93b500}, {0xc00019ca10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc000256620?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00019caf0?, {0x93e228?, 0xc000256620?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc000256620}, 0xc000272400)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00027cd20?}, {0x93e228, 0xc000256620}, 0xc000272400)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000270280, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:22 server.go:3230: http: panic serving [::1]:54762: template: public_navbar.html:6: unexpected EOF
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00020ede0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc000256700}, {0x831860, 0x93b500}, {0xc00019da10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc000256700?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00019daf0?, {0x93e228?, 0xc000256700?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc000256700}, 0xc0001a8300)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000184390?}, {0x93e228, 0xc000256700}, 0xc0001a8300)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0001881e0, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:22 server.go:3230: http: panic serving [::1]:54764: template: public_navbar.html:6: unexpected EOF
+goroutine 84 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00020ef50})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0002567e0}, {0x831860, 0x93b500}, {0xc00019da10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc0002567e0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00019daf0?, {0x93e228?, 0xc0002567e0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0002567e0}, 0xc000272500)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00027d8c0?}, {0x93e228, 0xc0002567e0}, 0xc000272500)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000270320, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:42 server.go:3230: http: panic serving [::1]:54766: template: public_navbar.html:6: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc000017140})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00017e000}, {0x831860, 0x93b500}, {0xc00011ba10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00017e000?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00011baf0?, {0x93e228?, 0xc00017e000?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00017e000}, 0xc00015a100)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001095f0?}, {0x93e228, 0xc00017e000}, 0xc00015a100)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000001540, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:42 server.go:3230: http: panic serving [::1]:54768: template: public_navbar.html:6: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc0000172a0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00017e0e0}, {0x831860, 0x93b500}, {0xc000066a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00017e0e0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc000066af0?, {0x93e228?, 0xc00017e0e0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00017e0e0}, 0xc00015a200)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001096e0?}, {0x93e228, 0xc00017e0e0}, 0xc00015a200)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000015e0, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:42 server.go:3230: http: panic serving [::1]:54770: template: public_navbar.html:6: unexpected EOF
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc000017410})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00017e1c0}, {0x831860, 0x93b500}, {0xc000066a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00017e1c0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc000066af0?, {0x93e228?, 0xc00017e1c0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00017e1c0}, 0xc00015a300)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00019e390?}, {0x93e228, 0xc00017e1c0}, 0xc00015a300)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000001680, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:43 server.go:3230: http: panic serving [::1]:54772: template: public_navbar.html:6: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc000017580})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00017e2a0}, {0x831860, 0x93b500}, {0xc000066a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00017e2a0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc000066af0?, {0x93e228?, 0xc00017e2a0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00017e2a0}, 0xc00015a400)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00019e9c0?}, {0x93e228, 0xc00017e2a0}, 0xc00015a400)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000001720, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:43 server.go:3230: http: panic serving [::1]:54774: template: public_navbar.html:6: unexpected EOF
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc0000176e0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00017e380}, {0x831860, 0x93b500}, {0xc000061a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00017e380?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc000061af0?, {0x93e228?, 0xc00017e380?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00017e380}, 0xc0000ac000)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009e090?}, {0x93e228, 0xc00017e380}, 0xc0000ac000)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000a2000, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:43 server.go:3230: http: panic serving [::1]:54776: template: public_navbar.html:6: unexpected EOF
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc000017850})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00017e460}, {0x831860, 0x93b500}, {0xc000061a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00017e460?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc000061af0?, {0x93e228?, 0xc00017e460?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00017e460}, 0xc00015a500)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00019f560?}, {0x93e228, 0xc00017e460}, 0xc00015a500)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000017c0, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:44 server.go:3230: http: panic serving [::1]:54778: template: public_navbar.html:6: unexpected EOF
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc0000179c0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00017e540}, {0x831860, 0x93b500}, {0xc000061a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00017e540?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc000061af0?, {0x93e228?, 0xc00017e540?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00017e540}, 0xc00015a600)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00019fb30?}, {0x93e228, 0xc00017e540}, 0xc00015a600)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000208000, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:44 server.go:3230: http: panic serving [::1]:54780: template: public_navbar.html:6: unexpected EOF
+goroutine 51 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc000017b20})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00017e620}, {0x831860, 0x93b500}, {0xc00021aa10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00017e620?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00021aaf0?, {0x93e228?, 0xc00017e620?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00017e620}, 0xc000224000)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002040f0?}, {0x93e228, 0xc00017e620}, 0xc000224000)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0002080a0, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:44:44 server.go:3230: http: panic serving [::1]:54782: template: public_navbar.html:6: unexpected EOF
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc000222160})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00023a000}, {0x831860, 0x93b500}, {0xc00021ba10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00023a000?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00021baf0?, {0x93e228?, 0xc00023a000?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00023a000}, 0xc000224100)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0002041b0?}, {0x93e228, 0xc00023a000}, 0xc000224100)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000208140, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:45:14 server.go:3230: http: panic serving [::1]:54784: template: public_navbar.html:6: unexpected EOF
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc000222220})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00017e700}, {0x831860, 0x93b500}, {0xc00021aa10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00017e700?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00021aaf0?, {0x93e228?, 0xc00017e700?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00017e700}, 0xc00015a700)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001fe690?}, {0x93e228, 0xc00017e700}, 0xc00015a700)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0002081e0, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:45:14 server.go:3230: http: panic serving [::1]:54786: template: public_navbar.html:6: unexpected EOF
+goroutine 57 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc000222380})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00023a0e0}, {0x831860, 0x93b500}, {0xc00021ba10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00023a0e0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00021baf0?, {0x93e228?, 0xc00023a0e0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00023a0e0}, 0xc000224200)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000204840?}, {0x93e228, 0xc00023a0e0}, 0xc000224200)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000208280, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:45:14 server.go:3230: http: panic serving [::1]:54788: template: public_navbar.html:6: unexpected EOF
+goroutine 62 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc0002224f0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00023a1c0}, {0x831860, 0x93b500}, {0xc00021ba10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00023a1c0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00021baf0?, {0x93e228?, 0xc00023a1c0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00023a1c0}, 0xc000224300)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000205080?}, {0x93e228, 0xc00023a1c0}, 0xc000224300)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000208320, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:46:14 server.go:3230: http: panic serving [::1]:54796: template: public_navbar.html:6: unexpected EOF
+goroutine 83 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc000017d40})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00017e7e0}, {0x831860, 0x93b500}, {0xc00021ba10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00017e7e0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00021baf0?, {0x93e228?, 0xc00017e7e0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00017e7e0}, 0xc000224400)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000205710?}, {0x93e228, 0xc00017e7e0}, 0xc000224400)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000208460, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:46:14 server.go:3230: http: panic serving [::1]:54794: template: public_navbar.html:6: unexpected EOF
+goroutine 82 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc000017ea0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00017e8c0}, {0x831860, 0x93b500}, {0xc00021ca10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00017e8c0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc00021caf0?, {0x93e228?, 0xc00017e8c0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00017e8c0}, 0xc000224500)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000205770?}, {0x93e228, 0xc00017e8c0}, 0xc000224500)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0002083c0, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:46:14 server.go:3230: http: panic serving [::1]:54798: template: public_navbar.html:6: unexpected EOF
+goroutine 77 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc0000aa160})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0000c2000}, {0x831860, 0x93b500}, {0xc000062a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc0000c2000?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc000062af0?, {0x93e228?, 0xc0000c2000?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0000c2000}, 0xc0000ac100)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009e120?}, {0x93e228, 0xc0000c2000}, 0xc0000ac100)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000001860, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:46:18 server.go:3230: http: panic serving [::1]:54800: template: public_navbar.html:6: unexpected EOF
+goroutine 38 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc0000aa2d0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0000c20e0}, {0x831860, 0x93b500}, {0xc000062a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc0000c20e0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc000062af0?, {0x93e228?, 0xc0000c20e0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0000c20e0}, 0xc0000ac300)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009e750?}, {0x93e228, 0xc0000c20e0}, 0xc0000ac300)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000a20a0, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:46:18 server.go:3230: http: panic serving [::1]:54802: template: public_navbar.html:6: unexpected EOF
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc0002d0000})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00017e9a0}, {0x831860, 0x93b500}, {0xc000062a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00017e9a0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc000062af0?, {0x93e228?, 0xc00017e9a0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00017e9a0}, 0xc0000ac400)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00009ed80?}, {0x93e228, 0xc00017e9a0}, 0xc0000ac400)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000a2140, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:46:18 server.go:3230: http: panic serving [::1]:54804: template: public_navbar.html:6: unexpected EOF
+goroutine 81 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc0002d0170})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00017ea80}, {0x831860, 0x93b500}, {0xc000062a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.top({0x93e228?, 0xc00017ea80?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_main.go:8 +0x97
+net/http.HandlerFunc.ServeHTTP(0xc000062af0?, {0x93e228?, 0xc00017ea80?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00017ea80}, 0xc00015a800)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0001ffb90?}, {0x93e228, 0xc00017ea80}, 0xc00015a800)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000001900, {0x93e6e0, 0xc000109500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:47:10 server.go:3230: http: panic serving [::1]:54808: template: signup.html:15: unexpected EOF
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00029a1e0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0002b40e0}, {0x0, 0x0}, {0xc0001d7a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.signup({0x93e228?, 0xc0002b40e0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc0001d7af0?, {0x93e228?, 0xc0002b40e0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0002b40e0}, 0xc0001a0400)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc00014e510?}, {0x93e228, 0xc0002b40e0}, 0xc0001a0400)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000b7680, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:47:10 server.go:3230: http: panic serving [::1]:54810: template: signup.html:15: unexpected EOF
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00029a390})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0002b41c0}, {0x0, 0x0}, {0xc0002bfa10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.signup({0x93e228?, 0xc0002b41c0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc0002bfaf0?, {0x93e228?, 0xc0002b41c0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0002b41c0}, 0xc0002a0300)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000190090?}, {0x93e228, 0xc0002b41c0}, 0xc0002a0300)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000194000, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:47:10 server.go:3230: http: panic serving [::1]:54806: template: signup.html:15: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00029a540})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0002b42a0}, {0x0, 0x0}, {0xc0000cda10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.signup({0x93e228?, 0xc0002b42a0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc0000cdaf0?, {0x93e228?, 0xc0002b42a0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0002b42a0}, 0xc00011c900)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0000a35f0?}, {0x93e228, 0xc0002b42a0}, 0xc00011c900)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000b74a0, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:47:10 server.go:3230: http: panic serving [::1]:54812: template: signup.html:15: unexpected EOF
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00029a6f0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0002b4380}, {0x0, 0x0}, {0xc000184a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.signup({0x93e228?, 0xc0002b4380?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc000184af0?, {0x93e228?, 0xc0002b4380?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0002b4380}, 0xc0002a0000)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000284090?}, {0x93e228, 0xc0002b4380}, 0xc0002a0000)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000288000, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:47:10 server.go:3230: http: panic serving [::1]:54818: template: signup.html:15: unexpected EOF
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00029a8b0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0002b4460}, {0x0, 0x0}, {0xc000184a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.signup({0x93e228?, 0xc0002b4460?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc000184af0?, {0x93e228?, 0xc0002b4460?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0002b4460}, 0xc0002a0400)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000285d70?}, {0x93e228, 0xc0002b4460}, 0xc0002a0400)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0002880a0, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:47:11 server.go:3230: http: panic serving [::1]:54820: template: signup.html:15: unexpected EOF
+goroutine 73 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00029aa70})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0002b4540}, {0x0, 0x0}, {0xc000184a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.signup({0x93e228?, 0xc0002b4540?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc000184af0?, {0x93e228?, 0xc0002b4540?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0002b4540}, 0xc0002a0500)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003b0510?}, {0x93e228, 0xc0002b4540}, 0xc0002a0500)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000288140, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:47:11 server.go:3230: http: panic serving [::1]:54822: template: signup.html:15: unexpected EOF
+goroutine 78 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00029ac30})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0002b4620}, {0x0, 0x0}, {0xc000184a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.signup({0x93e228?, 0xc0002b4620?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc000184af0?, {0x93e228?, 0xc0002b4620?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0002b4620}, 0xc0002a0600)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003b0c90?}, {0x93e228, 0xc0002b4620}, 0xc0002a0600)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0002881e0, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:47:11 server.go:3230: http: panic serving [::1]:54824: template: signup.html:15: unexpected EOF
+goroutine 83 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00029adf0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0002b4700}, {0x0, 0x0}, {0xc000184a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.signup({0x93e228?, 0xc0002b4700?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc000184af0?, {0x93e228?, 0xc0002b4700?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0002b4700}, 0xc0002a0700)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003b1410?}, {0x93e228, 0xc0002b4700}, 0xc0002a0700)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000288280, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:47:16 server.go:3230: http: panic serving [::1]:54826: template: signup.html:15: unexpected EOF
+goroutine 88 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00029afb0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0002b47e0}, {0x0, 0x0}, {0xc000184a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.signup({0x93e228?, 0xc0002b47e0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc000184af0?, {0x93e228?, 0xc0002b47e0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0002b47e0}, 0xc0002a0800)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003b1b90?}, {0x93e228, 0xc0002b47e0}, 0xc0002a0800)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000288320, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:47:16 server.go:3230: http: panic serving [::1]:54828: template: signup.html:15: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00034fdc0})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00020a1c0}, {0x0, 0x0}, {0xc000060a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.signup({0x93e228?, 0xc00020a1c0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc000060af0?, {0x93e228?, 0xc00020a1c0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00020a1c0}, 0xc00020e800)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000360150?}, {0x93e228, 0xc00020a1c0}, 0xc00020e800)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000001e0, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:47:16 server.go:3230: http: panic serving [::1]:54830: template: signup.html:15: unexpected EOF
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00034ff80})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00020a2a0}, {0x0, 0x0}, {0xc000060a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.signup({0x93e228?, 0xc00020a2a0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc000060af0?, {0x93e228?, 0xc00020a2a0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00020a2a0}, 0xc00020e900)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000360930?}, {0x93e228, 0xc00020a2a0}, 0xc00020e900)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000000280, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:47:46 server.go:3230: http: panic serving [::1]:54832: template: signup.html:15: unexpected EOF
+goroutine 99 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc000374140})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc00020a380}, {0x0, 0x0}, {0xc000060a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.signup({0x93e228?, 0xc00020a380?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc000060af0?, {0x93e228?, 0xc00020a380?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc00020a380}, 0xc00020ea00)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0003610b0?}, {0x93e228, 0xc00020a380}, 0xc00020ea00)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc000000320, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:47:46 server.go:3230: http: panic serving [::1]:54834: template: signup.html:15: unexpected EOF
+goroutine 104 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00029b160})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0002b48c0}, {0x0, 0x0}, {0xc000060a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.signup({0x93e228?, 0xc0002b48c0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc000060af0?, {0x93e228?, 0xc0002b48c0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0002b48c0}, 0xc00020eb00)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc000361830?}, {0x93e228, 0xc0002b48c0}, 0xc00020eb00)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0000003c0, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
+2023/02/16 16:47:46 server.go:3230: http: panic serving [::1]:54836: template: signup.html:15: unexpected EOF
+goroutine 97 [running]:
+net/http.(*conn).serve.func1()
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1850 +0xbf
+panic({0x841e00, 0xc00029b320})
+	/home/yuto/.goenv/versions/1.19.1/src/runtime/panic.go:890 +0x262
+html/template.Must(...)
+	/home/yuto/.goenv/versions/1.19.1/src/html/template/template.go:368
+udemy-go-lesson/app/controllers.generateHTML({0x93e228?, 0xc0002b49a0}, {0x0, 0x0}, {0xc000060a10?, 0x3, 0x0?})
+	/home/yuto/works/udemy-go-lesson/app/controllers/server.go:16 +0x106
+udemy-go-lesson/app/controllers.signup({0x93e228?, 0xc0002b49a0?}, 0x4c9e33?)
+	/home/yuto/works/udemy-go-lesson/app/controllers/route_auth.go:6 +0x8d
+net/http.HandlerFunc.ServeHTTP(0xc000060af0?, {0x93e228?, 0xc0002b49a0?}, 0x0?)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2109 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x93e228, 0xc0002b49a0}, 0xc0002a0900)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2487 +0x149
+net/http.serverHandler.ServeHTTP({0xc0004009f0?}, {0x93e228, 0xc0002b49a0}, 0xc0002a0900)
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:2947 +0x30c
+net/http.(*conn).serve(0xc0002883c0, {0x93e6e0, 0xc0000a3500})
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:1991 +0x607
+created by net/http.(*Server).Serve
+	/home/yuto/.goenv/versions/1.19.1/src/net/http/server.go:3102 +0x4db
